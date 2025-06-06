@@ -1,27 +1,24 @@
 {
-  "name": "bc-security-solutions",
-  "version": "0.1.0",
-  "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "test-env": "ts-node --esm test-env.ts",
+    "test-smtp": "ts-node --esm test-smtp.ts"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.3"
+    "dotenv": "^16.4.5",
+    "next": "latest",
+    "nodemailer": "^6.9.15",
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.3",
-    "@eslint/eslintrc": "^3"
+    "@types/node": "^22.7.4",
+    "@types/nodemailer": "^6.4.16",
+    "@types/react": "latest",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
   }
 }
